@@ -16,17 +16,6 @@ namespace MyApplication
             }
 
         }
-        static void Permuter(int a ,int b)
-           {
-            int c;
-            if (a < b)
-            {
-                c= b;
-                b = a;
-                a= c;
-            }
-           }
-        }
 
         static void SortTab(int[] tab)   
         {
@@ -38,7 +27,6 @@ namespace MyApplication
 
                 if (tab[i] < tab[j])
                 {
-                    Permuter(tab[i], tab[j]);
                 }
 
 
