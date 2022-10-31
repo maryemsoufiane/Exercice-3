@@ -5,16 +5,53 @@ namespace MyApplication
 {
     class Program
     {
-        
-        static void initialiseTab( )    // method
-        {
 
-            Console.WriteLine("");
+        static void initialiseTab(int[] tab)    // method
+        {
+            tab = new int[4];
+            Console.WriteLine(" saisir les elements du tableau");
+            for (int i = 0; i < tab.Length; i++)
+            {
+                tab[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+        }
+        static void Permuter(int a ,int b)
+           {
+            int c;
+            if (a < b)
+            {
+                c= b;
+                b = a;
+                a= c;
+            }
+           }
         }
 
-        static void Main(string[] args)
+        static void SortTab(int[] tab)   
         {
-            
+        
+        for (int i = 0; i < tab.Length; i++)
+        {
+            for (int j = i; i < tab.Length; i++)
+            {
+
+                if (tab[i] < tab[j])
+                {
+                    Permuter(tab[i], tab[j]);
+                }
+
+
+
+            }
+
         }
     }
+
+
+
+
 }
+
+
+
