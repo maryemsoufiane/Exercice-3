@@ -1,2 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+using System;
+
+namespace MyApplication
+{
+    class Program
+    {
+        
+        static void initialiseTab( )    // method
+        {
+
+            Console.WriteLine("");
+        }
+
+        static void Main(string[] args)
+        {
+            
+        }
+    }
+}
